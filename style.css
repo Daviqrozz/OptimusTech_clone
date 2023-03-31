@@ -52,6 +52,10 @@ header{
     font-size: 16px;
     line-height: 24px;
 }
+.navbar_links:hover{
+    color: var(--vermelho);
+    text-decoration:underline;
+}
 .cabecalho_botoes{
     cursor: pointer;
     padding: 15px;
@@ -60,13 +64,16 @@ header{
     gap:40px;
     font-family:var(--fonte);
     font-weight: 600;
-    
 }
 .botao_entrar{
     background: none;
     border: none;
     color: var(--cinza-secundario);
     padding: 10px 12px;
+}
+.botao_entrar:hover{
+    color: var(--vermelho);
+    text-decoration:underline;
 }
 .botao_cadastrar{
     background-color:var(--vermelho);
@@ -75,6 +82,13 @@ header{
     color: white;
     padding: 10px 12px;
 }
+.botao_cadastrar:hover{
+    background-color: white;
+    color: var(--vermelho);
+    transition: all ease 0.5s;
+    text-decoration: underline;
+}
+ /*responsivo */
 @media screen and (max-width:647px) {
     .navbar{
         display: none;
