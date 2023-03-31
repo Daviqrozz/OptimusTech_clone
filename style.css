@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     list-style: none;
     text-decoration: none;
 }
@@ -17,7 +21,6 @@
 header{
 }
 .cabecalho{
- 
     position: relative;
     height: 80px;
     display: flex;
@@ -29,7 +32,6 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 8px;
 }
 .icone_texto{
@@ -40,7 +42,7 @@ header{
 .navbar{
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 28px;
 }
 .navbar_links{
     color: var(--cinza-secundario);
@@ -72,4 +74,23 @@ header{
     border-radius: 10px;
     color: white;
     padding: 10px 12px;
+}
+@media screen and (max-width:647px) {
+    .navbar{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .cabecalho{
+        gap: 0;
+        justify-content: center;
+    }
+    .cabecalho_botoes{
+        gap: 24px;
+    }
+    .navbar{
+        gap: 10px;
+    }
+    .icone_globo{
+        gap: 0px;
 }
