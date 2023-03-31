@@ -18,15 +18,12 @@
     --fonte:"Inter";
     --vermelho:#8E2424;
 }
-header{
-}
 .cabecalho{
     position: relative;
     height: 80px;
     display: flex;
     justify-content:space-around;
     align-items: center;
-    gap: 15%;
 }
 .icone_globo{
     display: flex;
@@ -35,7 +32,7 @@ header{
     gap: 8px;
 }
 .icone_texto{
-    font-family: "Inter";
+    font-family:var(--fonte);
     font-weight: 500;
     color: var(--cinza);
 }
@@ -83,15 +80,56 @@ header{
     padding: 10px 12px;
 }
 .botao_cadastrar:hover{
-    background-color: white;
+   background: none;
     color: var(--vermelho);
     transition: all ease 0.5s;
     text-decoration: underline;
 }
+.sobrenos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 24px;
+}
+.sobrenos_span{
+color: var(--vermelho);
+font-family: var(--fonte);
+}
+.sobrenos_titulo{
+    font-family:var(--fonte);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color:  #101828;
+    letter-spacing: -0.02em;
+}
+.sobrenos_texto{
+    display: flex;
+    text-align: center;
+    margin: 0em 10em;
+}
+.sobrenos_paragrafo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--fonte);
+    color: var(--cinza-secundario);
+    text-align: center;
+    
+}
+
  /*responsivo */
 @media screen and (max-width:647px) {
     .navbar{
         display: none;
+    }
+    .sobrenos{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 @media screen and (max-width: 900px){
