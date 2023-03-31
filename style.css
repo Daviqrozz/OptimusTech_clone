@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 @font-face {
     font-family:"Inter";
@@ -8,16 +10,22 @@
 }
 :root{
     --cinza:#3A404E;
-
+    --cinza-secundario: #667085;
+    --fonte:"Inter";
+    --vermelho:#8E2424;
 }
 header{
-    background-color: red;
 }
-.container{
-    background-color: blue;  
+.cabecalho{
+ 
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 15%;
 }
 .icone_globo{
-    background-color: yellow;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,4 +36,40 @@ header{
     font-family: "Inter";
     font-weight: 500;
     color: var(--cinza);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.navbar_links{
+    color: var(--cinza-secundario);
+    font-family:var(--fonte);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.cabecalho_botoes{
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    font-family:var(--fonte);
+    font-weight: 600;
+    
+}
+.botao_entrar{
+    background: none;
+    border: none;
+    color: var(--cinza-secundario);
+    padding: 10px 12px;
+}
+.botao_cadastrar{
+    background-color:var(--vermelho);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 12px;
 }
