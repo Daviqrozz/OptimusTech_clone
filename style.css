@@ -122,7 +122,7 @@ font-family: var(--fonte);
 }
 
  /*responsivo */
-@media screen and (max-width:647px) {
+@media screen and (max-width:720px) {
     .navbar{
         display: none;
     }
@@ -130,6 +130,9 @@ font-family: var(--fonte);
         display:flex;
         flex-direction: column;
         text-align: center;
+    }
+    .icone_texto{
+        display: none;
     }
 }
 @media screen and (max-width: 900px){
@@ -140,9 +143,9 @@ font-family: var(--fonte);
     .cabecalho_botoes{
         gap: 24px;
     }
-    .navbar{
-        gap: 10px;
-    }
     .icone_globo{
         gap: 0px;
-}
+    }
+    .icone_texto{
+        margin: 0 1em 0 0;
+    }
