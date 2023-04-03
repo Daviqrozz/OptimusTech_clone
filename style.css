@@ -17,6 +17,7 @@
     --cinza-secundario: #667085;
     --fonte:"Inter";
     --vermelho:#8E2424;
+    --preto:#101828;
 }
 .cabecalho{
     position: relative;
@@ -89,7 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px 0px;
+    padding: 5em 0px;
     gap: 24px;
 }
 .sobrenos_span{
@@ -102,7 +103,7 @@ font-family: var(--fonte);
     font-weight: 600;
     font-size: 48px;
     line-height: 60px;
-    color:  #101828;
+    color:var(--preto);
     letter-spacing: -0.02em;
 }
 .sobrenos_texto{
@@ -118,10 +119,49 @@ font-family: var(--fonte);
     font-family: var(--fonte);
     color: var(--cinza-secundario);
     text-align: center;
-    
 }
 
- /*responsivo */
+.metricas{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:right;
+    padding: 0px;
+    gap:64px;
+    margin: 0em 8em 0em 8em;
+}
+.metrica{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+.metrica_titulo{
+    color: var(--vermelho);
+    font-family: var(--fonte);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    font-size: 55px;
+}
+.metrica_subtitulos{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: var(--fonte);
+    color: var(--preto);
+}
+.metrica_texto{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: var(--fonte);
+    color: var(--cinza-secundario);
+    
+}
+ /*Responsivo */
 @media screen and (max-width:720px) {
     .navbar{
         display: none;
@@ -149,3 +189,4 @@ font-family: var(--fonte);
     .icone_texto{
         margin: 0 1em 0 0;
     }
+}
