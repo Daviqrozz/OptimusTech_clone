@@ -291,6 +291,38 @@ font-family: var(--fonte);
     line-height: 20px;
     color: #667085;
 }
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 32px;
+}
+.rodape_titulo{
+    font-family: var(--fonte);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--preto);
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+.rodape_texto{
+    font-family: var(--fonte);
+    color: var(--cinza-secundario);
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+}
+.input_email{
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 14px 12px 16px;
+    gap: 8px;
+}
  /*Responsivo */
 @media screen and (max-width:720px) {
 
